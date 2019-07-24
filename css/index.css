@@ -1,3 +1,344 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.content {
+	max-width: 960px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 80px;
+	text-align: center;
+}
+
+h2 {
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+}
+
+hr {
+	/* width: 75%; */
+	margin-left: -0px;
+	border: 2px solid gray;
+	max-width: 875px;
+}
+
+body {
+	margin: 0px 100px 0px 100px;
+}
+
+.box-top {
+	display: flex;
+	flex-direction: row;
+	margin-top: 25px;
+}
+
+nav {
+	display: flex;
+	margin-top: 12px;
+}
+
+.box-top img {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-left: 40px;
+}
+
+a {
+	font-size: 18px;
+	color: gray;
+	text-decoration: none;
+	margin-right: 50px;
+	margin-left: 5px;
+}
+
+/* Box for top section */
+.box-section-one {
+	display: flex;
+}
+
+/* Box for Slogan & Start button */
+.box-content-one {
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+/* Innovation on demand Box */
+.box-one {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+/* Get Started Button */
+.box-two {
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	color: gray;
+	text-align: center;
+	padding-top: 2px;
+	border: 2px solid gray;
+}
+
+/* Box Right with Image */
+.box-content-two {
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 40px 0px 15px 100px;
+}
+
+/* Middle Section Above Banner Image in Middle */
+
+/* Section 2 */
+.box-section-two {
+	display: flex;
+	margin-top: 15px;
+}
+
+.box-content-three {
+	display: flex;
+	flex-wrap: wrap;
+	width: 45%;
+}
+
+.box-content-four {
+	display: flex;
+	flex-wrap: wrap;
+	width: 45%;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+/* Banner Image */
+.box-banner-image {
+	display: flex;
+	align-content: center;
+	margin-top: 15px;
+}
+/* Section Below Image Banner */
+
+/* Section 3 */
+.box-section-three {
+	display: flex;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.box-content-five {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 28%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.box-content-six {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 28%;
+	margin-top: 15px;
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+.box-content-seven {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	width: 28%;
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+.section-four {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-top: 25px;
+}
+
+address {
+	margin-bottom: 25px;
+}
+
+footer {
+	text-align: center;
+	margin-right: 300px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+/* Services Page */
+.top-section-services-page h1 {
+	display: flex;
+	flex-direction: row;
+}
+
+.top-section-services-page {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	width: 75%;
+}
+
+/* Container For 6 Content Boxes */
+.middle-section-services-page-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	margin-left: 5px;
+}
+
+/* Makes middle boxes into columns */
+.middle-section-services-page-wrap>* {
+	flex: 1 1 450px;
+}
+
+/* 6 boxes single content layout */
+.middle-section-services-page {
+	display: flex;
+	flex-direction: column;
+	min-width: 200px;
+	max-width: 420px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	border: 2px solid gray;
+}
+
+.middle-section-services-page p {
+	margin-left: 10px;
+}
+
+.middle-section-services-page h2 {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.top-section-services-page h1 {
+	font-size: 40px;
+}
+
+.services-header-img {
+	display: flex;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.bottom-section-services-page {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 75%;
+	margin-top: 20px;
+}
+
+.container-one {
+	display: flex;
+	flex-direction: column;
+	max-width: 420px;
+	margin-top: 10px;
+}
+
+.container-two {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	margin-left: 35px;
+	margin-bottom: 15px;
+}
+
+.bottom-section-services-page>* {
+	flex: 1 1 300px;
+}
+
+.learn-more {
+	display: flex;
+	width: 150px;
+	height: 40px;
+	border: 2px solid gray;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	justify-content: center;
+	border-radius: 5px;
+	/* align-items: baseline; */
+	/* text-align: center; */
+}
+.learn-more p {
+	margin-top: 8px;
+}
+
+li {
+	list-style-type: square;
+}
