@@ -535,7 +535,7 @@ li {
   hr {
     /* width: 75%; */
     /* margin-left: -0px; */
-    border: 2px solid black;
+    border: 2px solid gray;
     max-width: 100%;
   }
 
@@ -579,6 +579,13 @@ li {
     width: 90%;
     margin: 0px 25px 30px 15px;
   }
+
+  /* Banner Image */
+  .header-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
 
   .box-content-five {
     display: flex;
